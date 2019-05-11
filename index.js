@@ -54,7 +54,6 @@ function validate() {
   }
 }
 
-
 /** This function will create a new paragraph when user clicks on Generate Paragraph */
 function createPara() {
   var para = document.createElement("P");
@@ -63,3 +62,19 @@ function createPara() {
 
   document.getElementById("dymanicdata").appendChild(para);
 }
+
+//  This will slide images after every 5 sec.
+function rotate() {
+  var myImage = document.getElementById("imga");
+  var mySrc = myImage.getAttribute("src");
+  if (mySrc === "a.JPG") {
+    myImage.setAttribute("src", "b.JPG");
+  } else if (mySrc === "b.JPG") {
+    myImage.setAttribute("src", "c.JPG");
+  } else {
+    myImage.setAttribute("src", "a.JPG");
+  }
+}
+
+var bd = document.querySelector("body");
+bd.onload = setInterval(rotate, 6000);
