@@ -1,0 +1,28 @@
+.loader {
+  border: 16px solid gray; /* this will set border of 16px solid */
+  border-top: 16px solid green; /* this will set top border of 16px solid with green color */
+  width: 250px;
+  border-radius: 50%;
+  height: 250px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
