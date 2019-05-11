@@ -7,6 +7,8 @@ function closeProgress() {
   text.textContent = "";
 
   progress.style.display = "none";
+
+  window.location.href = "index.html"; // this line will navigate user to home page.
 }
 
 setTimeout(closeProgress, 6000);
