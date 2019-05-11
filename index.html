@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      home
+    </title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body onload="changeBackground()">
+    <div>
+      <input
+        type="text"
+        class="edit"
+        id="editText"
+        onmouseover="mouseover()"
+        onmouseout="omuseOut()"
+        onblur="checkInput()"
+        placeholder="Enter your text here"
+      />
+    </div>
+    <p id="error"></p>
+    <div>
+      <input type="submit" class="btn" id="submit" value="Submit" />
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
