@@ -53,3 +53,13 @@ function validate() {
     error.textContent = "";
   }
 }
+
+
+/** This function will create a new paragraph when user clicks on Generate Paragraph */
+function createPara() {
+  var para = document.createElement("P");
+
+  para.innerText = "This is dynamic generated paragraph";
+
+  document.getElementById("dymanicdata").appendChild(para);
+}
