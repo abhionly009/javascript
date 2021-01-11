@@ -1,0 +1,26 @@
+.container {
+  background-color: ivory;
+  border: 1px solid red;
+}
+
+.sortDiv {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  padding: 10px;
+  border: 1px solid greenyellow;
+  background-color: grey;
+  margin: 5px;
+}
+
+button {
+  margin: 10px;
+  padding: 10px;
+  font-size: larger;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
