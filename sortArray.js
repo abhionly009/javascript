@@ -42,6 +42,7 @@ create li node and append value to it and append to
 function createDataAndAppend(item,index) {
     let months = document.getElementById('months');
     let node = document.createElement('li'); 
+    node.setAttribute('id', item);
     let t = document.createTextNode(item);
     node.appendChild(t);
     months.appendChild(node);
@@ -72,4 +73,10 @@ document.getElementById("dsc").addEventListener('click', () => {
  */
 document.getElementById('normal').addEventListener('click', () => {
     createArraysData();
+})
+
+document.getElementById('months').addEventListener('click', e => {
+    let str = e.target.id+"";
+    window.location.href= str.toLowerCase() + ".html" ;
+
 })
