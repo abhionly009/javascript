@@ -1,0 +1,56 @@
+.container {
+  width: 100vw;
+  margin: auto;
+  text-align: center;
+}
+
+h3 {
+  display: inline;
+}
+
+ul {
+  list-style: none;
+}
+
+.li {
+  padding: 10px;
+  border: transparent;
+  background-color: whitesmoke;
+  color: black;
+  height: 50px;
+  margin: 5px;
+  position: relative;
+}
+
+button {
+  background-color: green;
+  color: white;
+  font-size: 20px;
+  padding: 2px 0px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+input::selection {
+  border: 1px solid blue;
+  padding: 10px;
+}
+/* li:hover {
+  height: 60px;
+} */
+
+.header3 {
+  float: left;
+}
+
+.delebtn {
+  color: white;
+  height: 20px;
+  font-size: 10px;
+}
+.list {
+  clear: both;
+}
